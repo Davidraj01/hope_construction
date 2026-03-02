@@ -1,13 +1,15 @@
+import { useState, useEffect } from 'react'
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
-import { Bars3Icon, ArrowUpRightIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, ArrowUpRightIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link, useLocation } from 'react-router-dom'
 
 const navigation = [
-  { name: 'HOME', href: '/', current: true },
-  { name: 'ABOUT', href: '/about', current: false },
-  { name: 'SERVICES', href: '/service', current: false },
-  { name: 'PROJECTS', href: '/project', current: false },
-  { name: 'OUR BLOGS', href: '/blog', current: false },
-  { name: 'CONTACT US', href: '/contact', current: false },
+  { name: 'HOME', href: '/' },
+  { name: 'ABOUT', href: '/about' },
+  { name: 'SERVICES', href: '/service' },
+  { name: 'PROJECTS', href: '/project' },
+  { name: 'OUR BLOGS', href: '/blog' },
+  { name: 'CONTACT US', href: '/contact' },
 ]
 
 function classNames(...classes) {
@@ -15,15 +17,31 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+  const location = useLocation();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const isActivePath = (href, currentPath) => {
+    if (href === '/') return currentPath === '/';
+    return currentPath.startsWith(href);
+  };
+
   return (
-    <Disclosure as="nav" className="absolute top-0 w-full z-50 bg-transparent">
+    <Disclosure as="nav" className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-surface/90 backdrop-blur-md shadow-lg border-b border-surface-light' : 'bg-transparent'}`}>
       {({ open }) => (
         <>
           <div className="mx-auto flex h-20 items-stretch justify-between w-full">
 
-            {/* LEFT: Logo & Menu Box */}
-            <div className="flex bg-white pr-6 items-center" style={{ clipPath: 'polygon(0 0, 100% 0, 95% 100%, 0% 100%)' }}>
-              <div className="flex items-center pl-8 pr-4">
+            {/* LEFT: Logo Box */}
+            <div className="flex bg-white pr-8 lg:pr-10 items-center" style={{ clipPath: 'polygon(0 0, 100% 0, 92% 100%, 0% 100%)' }}>
+              <div className="flex items-center pl-4 lg:pl-8 pr-2 lg:pr-4">
                 {/* Custom Logo Icon */}
                 <div className="grid grid-cols-2 gap-0.5 mr-2">
                   <div className="w-2 h-2 bg-primary"></div>
@@ -31,36 +49,45 @@ export default function Navbar() {
                   <div className="w-2 h-2 bg-primary"></div>
                   <div className="w-2 h-2 bg-primary"></div>
                 </div>
-                <span className="text-xl font-black tracking-tighter text-dark font-heading uppercase">
+                <span className="text-xl lg:text-xl font-black tracking-tighter text-dark font-heading uppercase">
                   Hope Constructor
                 </span>
               </div>
+            </div>
 
-              {/* Mobile menu button */}
-              <DisclosureButton className="lg:hidden inline-flex items-center justify-center p-2 text-muted hover:text-dark focus:outline-none ml-4">
+            {/* Mobile menu button */}
+            <div className="flex lg:hidden flex-1 justify-end items-center pr-4">
+              <DisclosureButton className="inline-flex items-center justify-center p-2 rounded-md bg-dark text-white hover:bg-primary hover:text-dark focus:outline-none transition-colors">
                 <span className="sr-only">Open main menu</span>
-                <Bars3Icon className="block h-8 w-8 stroke-1" aria-hidden="true" />
+                {open ? (
+                  <XMarkIcon className="block h-6 w-6 stroke-2" aria-hidden="true" />
+                ) : (
+                  <Bars3Icon className="block h-6 w-6 stroke-2" aria-hidden="true" />
+                )}
               </DisclosureButton>
             </div>
 
             {/* CENTER: Navigation Links (Hidden on small screens) */}
             <div className="hidden lg:flex flex-1 items-center justify-center px-8">
               <div className="flex space-x-8">
-                {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className={classNames(
-                      item.current
-                        ? 'text-white border-b-2 border-primary'
-                        : 'text-light hover:text-primary',
-                      'flex items-center px-1 py-2 text-sm font-bold font-heading tracking-wide transition-colors duration-200'
-                    )}
-                    aria-current={item.current ? 'page' : undefined}
-                  >
-                    {item.name}
-                  </a>
-                ))}
+                {navigation.map((item) => {
+                  const isActive = isActivePath(item.href, location.pathname);
+                  return (
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      className={classNames(
+                        isActive
+                          ? 'text-white border-b-2 border-primary'
+                          : 'text-light hover:text-primary',
+                        'flex items-center px-1 py-2 text-sm font-bold font-heading tracking-wide transition-colors duration-200'
+                      )}
+                      aria-current={isActive ? 'page' : undefined}
+                    >
+                      {item.name}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
 
@@ -78,22 +105,25 @@ export default function Navbar() {
           {/* MOBILE MENU PANEL */}
           <DisclosurePanel className="lg:hidden bg-surface text-white shadow-xl absolute w-full left-0 top-20 border-t border-surface-light">
             <div className="space-y-1 px-4 pb-3 pt-2">
-              {navigation.map((item) => (
-                <DisclosureButton
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current ? 'bg-surface-light text-primary' : 'text-light hover:bg-surface-light hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-bold font-heading transition-colors'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
-                >
-                  <div className="flex justify-between items-center">
-                    {item.name}
-                  </div>
-                </DisclosureButton>
-              ))}
+              {navigation.map((item) => {
+                const isActive = isActivePath(item.href, location.pathname);
+                return (
+                  <DisclosureButton
+                    key={item.name}
+                    as={Link}
+                    to={item.href}
+                    className={classNames(
+                      isActive ? 'bg-surface-light text-primary' : 'text-light hover:bg-surface-light hover:text-white',
+                      'block rounded-md px-3 py-2 text-base font-bold font-heading transition-colors'
+                    )}
+                    aria-current={isActive ? 'page' : undefined}
+                  >
+                    <div className="flex justify-between items-center">
+                      {item.name}
+                    </div>
+                  </DisclosureButton>
+                );
+              })}
               <div className="mt-4 border-t border-surface-light pt-4 pb-2">
                 <button className="w-full flex items-center justify-center bg-primary text-dark px-4 py-3 font-bold uppercase text-sm font-heading hover:bg-primary-dark transition-colors">
                   Get in touch
