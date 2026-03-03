@@ -1,0 +1,112 @@
+import React from 'react'
+
+const ContactSec2 = () => {
+    return (
+        <section className="py-20 px-4 md:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-24">
+            {/* Left Content */}
+            <div className="flex-1">
+                <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-tight mb-6 leading-tight">
+                    GET IN TOUCH FOR<br />PROJECT GUIDANCE
+                </h2>
+                <p className="text-gray-600 mb-12 max-w-xl">
+                    Contact our team today for reliable support, clear communication, and professional assistance with your construction needs.
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+                    {/* Item 1 */}
+                    <div>
+                        <div className="bg-[#ffb800] w-14 h-14 flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+                        </div>
+                        <h4 className="font-bold text-lg mb-4 uppercase">CONTACT US</h4>
+                        <p className="text-gray-600">Phone 01: +1890 123 456</p>
+                        <p className="text-gray-600">Phone 02: +1890 123 888</p>
+                    </div>
+
+                    {/* Item 2 */}
+                    <div>
+                        <div className="bg-[#ffb800] w-14 h-14 flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
+                        </div>
+                        <h4 className="font-bold text-lg mb-4 uppercase">EMAIL ADDRESS</h4>
+                        <p className="text-gray-600">support01@example.com</p>
+                        <p className="text-gray-600">support02@example.com</p>
+                    </div>
+
+                    {/* Item 3 */}
+                    <div>
+                        <div className="bg-[#ffb800] w-14 h-14 flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
+                        </div>
+                        <h4 className="font-bold text-lg mb-4 uppercase">OPENING HOURS</h4>
+                        <p className="text-gray-600">Mon - Sat: 7.00 am - 8.00 pm</p>
+                        <p className="text-gray-600">Sunday: 8.00 am - 6.00 pm</p>
+                    </div>
+
+                    {/* Item 4 */}
+                    <div>
+                        <div className="bg-[#ffb800] w-14 h-14 flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 15 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
+                        </div>
+                        <h4 className="font-bold text-lg mb-4 uppercase">OUR OFFICE</h4>
+                        <p className="text-gray-600">5609 E Sprague Ave, Spokane</p>
+                        <p className="text-gray-600">Valley, WA 99212, USA</p>
+                    </div>
+                </div>
+            </div>
+
+            {/* Right Form */}
+            <div className="flex-1 bg-[#e1edf4] p-8 md:p-12 h-fit">
+                <div className="text-center mb-8">
+                    <h3 className="text-2xl font-bold uppercase mb-2">LET'S CONTACT TODAY</h3>
+                    <p className="text-gray-600 text-sm">Send your details for quick and reliable assistance.</p>
+                </div>
+
+                <form className="flex flex-col gap-4">
+                    <input
+                        type="text"
+                        placeholder="Your name*"
+                        className="w-full p-4 focus:outline-none border border-transparent focus:border-[#ffb800] transition-colors"
+                        required
+                    />
+                    <input
+                        type="email"
+                        placeholder="Email address*"
+                        className="w-full p-4 focus:outline-none border border-transparent focus:border-[#ffb800] transition-colors"
+                        required
+                    />
+                    <input
+                        type="tel"
+                        placeholder="Your phone*"
+                        className="w-full p-4 focus:outline-none border border-transparent focus:border-[#ffb800] transition-colors"
+                        required
+                    />
+                    <input
+                        type="text"
+                        placeholder="Subject"
+                        className="w-full p-4 focus:outline-none border border-transparent focus:border-[#ffb800] transition-colors"
+                    />
+                    <textarea
+                        placeholder="Message*"
+                        rows="5"
+                        className="w-full p-4 focus:outline-none border border-transparent focus:border-[#ffb800] transition-colors resize-none"
+                        required
+                    ></textarea>
+
+                    <div className="flex md:justify-end mt-4">
+                        <button type="submit" className="flex items-center group w-fit">
+                            <span className="bg-white border-2 border-[#ffb800] p-4 text-black group-hover:bg-[#ffb800] transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg>
+                            </span>
+                            <span className="bg-[#ffb800] border-2 border-[#ffb800] border-l-0 py-4 px-8 font-bold text-sm tracking-wider uppercase group-hover:bg-white transition-colors">
+                                SEND A MESSAGE
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    )
+}
+
+export default ContactSec2
