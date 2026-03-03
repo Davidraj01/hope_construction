@@ -1,12 +1,19 @@
 import React from 'react'
-import hero_back from '/hero-back.png'
+import Hero from '../components/HomeComponents/Hero'
+import Home2 from '../components/HomeComponents/Home2'
+import Home3 from '../components/HomeComponents/Home3'
+import Home4 from '../components/HomeComponents/Home4'
+import Home5 from '../components/HomeComponents/Home5'
 
 const Home = () => {
   return (
-    <section className='min-h-screen '>
-        <img src={hero_back} alt="Hero Background" className="w-full h-full object-cover" />
-        <h1>Home </h1>
-    </section>
+    <>
+      <Hero />
+      <Home2 />
+      <Home3 />
+      <Home4 />
+      <Home5 />
+    </>
   )
 }
 

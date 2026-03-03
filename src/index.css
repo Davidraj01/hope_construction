@@ -32,7 +32,12 @@
     @apply font-body text-text bg-white antialiased overflow-x-hidden;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-heading;
   }
 
@@ -75,9 +80,17 @@
 
   /* Gradient Animation */
   @keyframes gradientShift {
-    0%   { background-position: 0% 50%; }
-    50%  { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
   }
 
   .animate-gradient {
@@ -87,25 +100,75 @@
 
   /* Star Shimmer */
   @keyframes shimmer {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
   }
 
   .star-shimmer {
     animation: shimmer 2s ease-in-out infinite;
   }
 
-  .star-shimmer:nth-child(2) { animation-delay: 0.15s; }
-  .star-shimmer:nth-child(3) { animation-delay: 0.3s; }
-  .star-shimmer:nth-child(4) { animation-delay: 0.45s; }
-  .star-shimmer:nth-child(5) { animation-delay: 0.6s; }
+  .star-shimmer:nth-child(2) {
+    animation-delay: 0.15s;
+  }
+
+  .star-shimmer:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .star-shimmer:nth-child(4) {
+    animation-delay: 0.45s;
+  }
+
+  .star-shimmer:nth-child(5) {
+    animation-delay: 0.6s;
+  }
 
   /* Caution Tape */
   .caution-tape {
-    background: repeating-linear-gradient(
-      45deg,
-      #FFB703, #FFB703 10px,
-      #111 10px, #111 20px
-    );
+    background: repeating-linear-gradient(45deg,
+        #FFB703, #FFB703 10px,
+        #111 10px, #111 20px);
+  }
+
+  .caution-tape-reverse {
+    background: repeating-linear-gradient(-45deg,
+        #FFB703, #FFB703 10px,
+        #111 10px, #111 20px);
+  }
+
+  @keyframes stripeSlide {
+    0% {
+      background-position: 0 0;
+    }
+
+    100% {
+      background-position: -40px 0;
+    }
+  }
+
+  @keyframes stripeSlideReverse {
+    0% {
+      background-position: 0 0;
+    }
+
+    100% {
+      background-position: 40px 0;
+    }
+  }
+
+  .animate-stripe-slide {
+    animation: stripeSlide 2s linear infinite;
+  }
+
+  .animate-stripe-slide-reverse {
+    animation: stripeSlideReverse 2s linear infinite;
   }
 }
