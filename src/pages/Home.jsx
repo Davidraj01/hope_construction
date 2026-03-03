@@ -9,7 +9,8 @@ import Home7 from '../components/HomeComponents/Home7'
 import Home8 from '../components/HomeComponents/Home8'
 import Home9 from '../components/HomeComponents/Home9'
 import Home10 from '../components/HomeComponents/Home10'
-  
+import Home11 from '../components/HomeComponents/Home11'
+
 const Home = () => {
   return (
     <>
@@ -23,6 +24,7 @@ const Home = () => {
       <Home8 />
       <Home9 />
       <Home10 />  
+      <Home11 />  
     </>
   )
 }
