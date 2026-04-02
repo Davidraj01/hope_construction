@@ -44,9 +44,9 @@ const About3 = () => {
                     className="absolute inset-0 z-0"
                 >
                     <img
-                        srcSet="/about3.png 400w, /about3.png 800w, /about3.png 1200w"
+                        srcSet="/about9.png 400w, /about9.png 800w, /about9.png 1200w"
                         sizes="100vw"
-                        src="/about3.png"
+                        src="/about9.png"
                         alt="Construction workers reviewing blueprints"
                         loading="lazy"
                         decoding="async"

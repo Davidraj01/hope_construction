@@ -13,9 +13,9 @@ const Hero = () => {
                 className="absolute inset-0 z-0"
             >
                 <img
-                    srcSet="/about.png 400w, /about.png 800w, /about.png 1200w"
+                    srcSet="/about7.png 400w, /about7.png 800w, /about7.png 1200w"
                     sizes="100vw"
-                    src="/about.png"
+                    src="/about7.png"
                     alt="Construction workers reviewing blueprints"
                     fetchpriority="high"
                     loading="eager"
@@ -25,10 +25,10 @@ const Hero = () => {
             </motion.div>
 
             {/* Dark Overlay */}
-            <div className="absolute inset-0 z-[1] bg-black/40"></div>
+            <div className="absolute inset-0 z-[1] bg-black/5"></div>
 
             {/* Subtle gradient overlays for depth */}
-            <div className="absolute inset-0 z-[2] bg-gradient-to-t from-black/40 via-transparent to-black/20"></div>
+            <div className="absolute inset-0 z-[2] bg-gradient-to-t from-black/30 via-transparent to-black/20"></div>
 
             {/* Content */}
             <div className="relative z-10 flex flex-col items-center justify-center text-center px-4">

@@ -42,7 +42,7 @@ const Hero = () => {
 
                 {/* Advanced Gradient Overlay for a sleek look */}
                 <div className="absolute inset-0 bg-gradient-to-r from-[#050505]/40 via-[#050505]/70 to-transparent"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]/30"></div>
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]/30"></div> */}
             </motion.div>
 
             {/* Main Content */}
@@ -65,13 +65,15 @@ const Hero = () => {
                     </motion.div>
 
                     {/* Refined SaaS Typography */}
-                    <motion.h1 variants={textVariants} className="text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] font-extrabold leading-[1.05] mb-4 sm:mb-8 tracking-tight font-sans">
-                        Building <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Dreams</span><br />
-                        With Quality & Trust.
+                    <motion.h1 variants={textVariants} className="text-white text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[4rem] font-extrabold leading-[1.05] mb-4 sm:mb-8 tracking-tight font-sans">
+                        PREMIUM INDEPENDENT VILLA <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-yellow-500">FOR SALE</span><br />
+                        Premium 2BHK Villa
                     </motion.h1>
 
-                    <motion.p variants={textVariants} className="text-gray-400 text-sm sm:text-base md:text-lg max-w-[100%] sm:max-w-[90%] md:max-w-[650px] mb-8 sm:mb-12 leading-relaxed font-light">
-                        From Plan to Key Handover – Complete Construction Solution. We deliver individual houses, villas, and turnkey projects customized to your vision.
+                    <motion.p variants={textVariants} className="text-yellow-400 text-sm sm:text-base md:text-lg max-w-[100%] sm:max-w-[90%] md:max-w-[650px] mb-8 sm:mb-12 leading-relaxed font-light">
+                       ✔ High Quality Construction<br></br>
+                        ✔ Car Parking<br></br>
+                        ✔ Luxury Finishing
                     </motion.p>
 
                     {/* Premium Buttons */}

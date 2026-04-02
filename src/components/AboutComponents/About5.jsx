@@ -103,9 +103,9 @@ const About5 = () => {
                         {/* Banner Background Image */}
                         <div className="relative w-full h-[280px] sm:h-[320px] md:h-[360px] lg:h-[400px]">
                             <img
-                                srcSet="/about4.png 400w, /about4.png 800w, /about4.png 1200w"
+                                srcSet="/about10.png 400w, /about10.png 800w, /about10.png 1200w"
                                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
-                                src="/about4.png"
+                                src="/about10.png"
                                 alt="Construction workers with blueprints"
                                 loading="lazy"
                                 decoding="async"

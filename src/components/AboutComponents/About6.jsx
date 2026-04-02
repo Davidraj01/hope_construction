@@ -99,13 +99,13 @@ const About6 = () => {
                         {/* Main Worker Image */}
                         <div className="relative overflow-hidden">
                             <img
-                                srcSet="/about6.png 400w, /about6.png 800w, /about6.png 1200w"
+                                srcSet="/about8.png 400w, /about8.png 800w, /about8.png 1200w"
                                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
-                                src="/about6.png"
+                                src="/about8.png"
                                 alt="Construction worker with hard hat"
                                 loading="lazy"
                                 decoding="async"
-                                className="w-full h-[420px] sm:h-[480px] md:h-[540px] lg:h-[580px] object-cover object-top"
+                                className="w-full h-[420px] sm:h-[480px] md:h-[540px] lg:h-full object-cover object-top"
                             />
 
                             {/* Decorative yellow diagonal accent top-right */}
