@@ -9,36 +9,36 @@ const Home3 = () => {
             title: "RESIDENTIAL\nCONSTRUCTION",
             desc: "Individual houses, 1BHK/2BHK, duplex, and luxury villa construction tailored to your needs.",
             image: "sec3img1.png",
-            icon: <BuildingOffice2Icon className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-500 group-hover:scale-110" />
+            icon: <BuildingOffice2Icon className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-500" />
         },
         {
             title: "PLANNING &\nDESIGN",
             desc: "2D Floor Plan, 3D Elevation Design, and comprehensive building plan approval drawings.",
             image: "sec3img2.png",
-            icon: <Cog8ToothIcon className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-500 group-hover:scale-110" />
+            icon: <Cog8ToothIcon className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-500" />
         },
         {
             title: "TURNKEY\nCONSTRUCTION",
             desc: "Complete construction from foundation to key handover including civil, electrical, and plumbing works.",
             image: "sec3img3.png",
-            icon: <WrenchScrewdriverIcon className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-500 group-hover:scale-110" />
+            icon: <WrenchScrewdriverIcon className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-500" />
         },
         {
             title: "INTERIOR &\nFINISHING",
             desc: "Tiles & flooring, painting, false ceiling, and modular kitchen installations.",
             image: "sec3img4.png",
-            icon: <TruckIcon className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-500 group-hover:scale-110" />
+            icon: <TruckIcon className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-500" />
         }
     ]
 
     return (
-        <section className="relative w-full bg-[#050505] overflow-hidden">
+        <section className="relative w-full bg-white overflow-hidden">
             {/* Top Image Section */}
             <div className="relative w-full h-[60svh] min-h-[450px] lg:h-[700px] flex items-center justify-center overflow-hidden">
                 <img
                     src="/sec3.png"
                     alt="Modern Architecture Construction"
-                    className="absolute inset-0 w-full h-full object-cover opacity-50 select-none grayscale-[0.1]"
+                    className="absolute inset-0 w-full h-full object-cover opacity-100 select-none grayscale-0"
                 />
 
                 {/* Text overlay */}
@@ -64,7 +64,7 @@ const Home3 = () => {
             </div>
 
             {/* Bottom Services Section */}
-            <div className="w-full bg-[#050505] pt-16 md:pt-24 relative z-10">
+            <div className="w-full bg-white pt-16 md:pt-24 relative z-10">
                 {/* Badge & Title */}
                 <div className="container mx-auto px-6 mb-16 md:mb-20 flex flex-col items-center">
 
@@ -86,7 +86,7 @@ const Home3 = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-                            className="text-white text-3xl md:text-4xl lg:text-5xl xl:text-[4rem] font-extrabold uppercase leading-[1.1] tracking-tight max-w-4xl text-center"
+                            className="text-black text-3xl md:text-4xl lg:text-5xl xl:text-[4rem] font-extrabold uppercase leading-[1.1] tracking-tight max-w-4xl text-center"
                         >
                             Quality Construction Services<br className="hidden md:block"/>
                             in Tamil Nadu
@@ -95,59 +95,61 @@ const Home3 = () => {
                 </div>
 
                 {/* Services Grid (Full width bleeding without container horizontal padding) */}
-                <div className="w-full">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-y border-white/5 lg:divide-x divide-white/5">
-                        {services.map((service, idx) => (
-                            <motion.div
-                                key={idx}
-                                initial={{ opacity: 0, y: 30 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, margin: "-50px" }}
-                                transition={{ delay: idx * 0.1, duration: 0.7, ease: "easeOut" }}
-                                className="group relative overflow-hidden p-8 md:p-10 xl:p-14 flex flex-col border-b md:border-b-0 border-white/5 last:border-b-0 items-start cursor-pointer min-h-[400px] xl:min-h-[500px]"
-                            >
-                                {/* Hover Background Image */}
-                                <div className="absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out">
-                                    <img
-                                        src={service.image}
-                                        alt={service.title}
-                                        className="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000 ease-out"
-                                    />
-                                    {/* Gradient overlay to ensure text readability */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20"></div>
-                                </div>
+               {/* Services Grid */}
+<div className="w-full">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-y border-white/5 lg:divide-x divide-white/5">
+        {services.map((service, idx) => (
+            <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ delay: idx * 0.1, duration: 0.7, ease: "easeOut" }}
+                className="group relative overflow-hidden flex flex-col cursor-pointer min-h-[400px] xl:min-h-[500px]"
+            >
+                {/* Background Image with Smooth Hover Scale */}
+                <div className="absolute inset-0 z-0">
+                    <img
+                        src={service.image}
+                        alt={service.title}
+                        className="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)]"
+                    />
+                    {/* Dark Gradient Overlay for Text Readability (Essential for Pro Designs) */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/10 transition-opacity duration-500 group-hover:opacity-90"></div>
+                </div>
 
-                                {/* Content Layer */}
-                                <div className="relative z-10 w-full h-full flex flex-col">
-                                    {/* Icon Container (Moves depending on state) */}
-                                    <div className="w-14 h-14 xl:w-20 xl:h-20 bg-white/5 border border-white/10 flex items-center justify-center text-white mb-auto group-hover:bg-[#FFB800] group-hover:border-[#FFB800] group-hover:text-black transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] shadow-none transform origin-top-left z-20">
-                                        {service.icon}
-                                    </div>
+                {/* Content Layer */}
+                <div className="relative z-10 w-full h-full p-8 md:p-10 xl:p-14 flex flex-col justify-between">
+                    
+                    {/* Top: Icon Container (Added Glassmorphism & Hover Color Fill) */}
+                    <div className="w-14 h-14 xl:w-20 xl:h-20 bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center text-white transition-all duration-500 ease-out group-hover:bg-[#FFB800] group-hover:text-black group-hover:border-[#FFB800] rounded-sm">
+                        {service.icon}
+                    </div>
 
-                                    {/* Text Content */}
-                                    <div className="mt-8 xl:mt-12 flex flex-col justify-end transform transition-transform duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:-translate-y-4">
-                                        <h4 className="text-white font-extrabold text-2xl xl:text-3xl uppercase leading-[1.1] tracking-tight whitespace-pre-wrap mb-4 group-hover:drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
-                                            {service.title}
-                                        </h4>
+                    {/* Bottom: Text Content (Slightly lifts on hover) */}
+                    <div className="transform transition-transform duration-500 ease-out group-hover:-translate-y-2 mt-auto">
+                        <h4 className="text-white font-extrabold text-2xl xl:text-3xl uppercase leading-[1.1] tracking-tight mb-3">
+                            {service.title}
+                        </h4>
 
-                                        {/* Description (Reveals on hover) */}
-                                        <div className="h-0 opacity-0 overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:h-[80px] group-hover:opacity-100 group-hover:mt-2">
-                                            <p className="text-gray-300 text-sm md:text-base leading-relaxed font-light drop-shadow-md">
-                                                {service.desc}
-                                            </p>
-                                        </div>
+                        {/* Description */}
+                        <p className="text-gray-300 text-sm md:text-base leading-relaxed font-light mb-6 opacity-80 transition-opacity duration-500 group-hover:opacity-100">
+                            {service.desc}
+                        </p>
 
-                                        {/* Learn More Link (Reveals on hover) */}
-                                        <div className="h-0 opacity-0 overflow-hidden transition-all duration-500 delay-100 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:h-auto group-hover:opacity-100 group-hover:mt-6 flex items-center gap-2">
-                                            <ArrowUpRightIcon className="w-4 h-4 text-[#FFB800]" />
-                                            <span className="text-white font-bold text-xs tracking-widest uppercase hover:text-[#FFB800] transition-colors">Learn More</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </motion.div>
-                        ))}
+                        {/* Learn More Link (Animated Arrow & Text) */}
+                        <div className="flex items-center gap-2">
+                            <span className="text-white group-hover:text-[#FFB800] transition-colors duration-300 font-bold text-xs tracking-widest uppercase">
+                                Learn More
+                            </span>
+                            <ArrowUpRightIcon className="w-4 h-4 text-[#FFB800] transform transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+                        </div>
                     </div>
                 </div>
+            </motion.div>
+        ))}
+    </div>
+</div>
             </div>
         </section>
     )

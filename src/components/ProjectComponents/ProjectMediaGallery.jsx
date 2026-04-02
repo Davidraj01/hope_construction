@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
+import project1 from '../../assets/project1.png'
+import project2 from '../../assets/project2.png'
+import project3 from '../../assets/project3.png'
+
 
 const ongoingProjects = [
     { src: '/project6.jpeg', alt: 'Project 6' },
@@ -14,6 +18,9 @@ const ongoingProjects = [
     { src: '/forsale5.jpeg', alt: 'Ongoing Project 9' },
     { src: '/forsale6.jpeg', alt: 'Ongoing Project 10' },
     { src: '/forsale7.jpeg', alt: 'Ongoing Project 11' },
+    {src: project1, alt: 'Ongoing Project 13' },
+    {src: project2, alt: 'Ongoing Project 14' },
+    {src: project3, alt: 'Ongoing Project 15' },
 ]
 
 const completedProjects = [
@@ -26,6 +33,16 @@ const completedProjects = [
     { src: '/project10 (3).jpeg', alt: 'Completed Project 3' },
     { src: '/project10 (4).jpeg', alt: 'Completed Project 4' },
     { src: '/project10 (5).jpeg', alt: 'Completed Project 5' },
+    {src: '/project6.png', alt: 'Completed Project 6' },
+    { src: '/project7.png', alt: 'Completed Project 7' },
+    { src: '/project8.png', alt: 'Completed Project 8' },
+    // { src: '/project9.png', alt: 'Completed Project 9' },
+    { src: '/project10.png', alt: 'Completed Project 10' },
+    {src:project1, alt: 'Completed Project 11' },
+    {src:project2, alt: 'Completed Project 12' },
+    {src:project3, alt: 'Completed Project 13' },
+
+
 ]
 
 const forSaleProjects = [

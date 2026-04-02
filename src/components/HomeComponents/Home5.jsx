@@ -1,6 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { ArrowLeftIcon, ArrowRightIcon, ArrowUpRightIcon } from '@heroicons/react/24/outline'
+import project1 from '../../assets/project1.png'
+import project2 from '../../assets/project2.png'
+import project3 from '../../assets/project3.png'
 
 const Home5 = () => {
 
@@ -9,19 +12,19 @@ const Home5 = () => {
             category: "READY TO MOVE",
             title: "PROJECT 01\n2BHK HOUSE",
             desc: "A beautiful 2BHK independent house available for sale. Move-in ready with premium finishes and quality materials.",
-            image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1000&auto=format&fit=crop"
-        },
+            image: project1
+         },
         {
             category: "UNDER CONSTRUCTION",
             title: "PROJECT 02\nROOF COMPLETED",
             desc: "An ongoing development where roof level work has been successfully completed. Quality and transparency at every step.",
-            image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1000&auto=format&fit=crop"
+            image: project2
         },
         {
             category: "UPCOMING",
             title: "PROJECT 03\nSTARTING SOON",
             desc: "A highly anticipated upcoming project in Chengalpattu. Planning and design phase is finalized. Construction starting soon.",
-            image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop"
+            image: project3
         }
     ]
 

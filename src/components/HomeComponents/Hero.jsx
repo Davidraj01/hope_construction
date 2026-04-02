@@ -2,6 +2,7 @@ import React from 'react'
 import { ArrowUpRightIcon, ArrowUpIcon, PlayIcon } from '@heroicons/react/24/solid'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import hero from '../../assets/hero.png'
 
 const Hero = () => {
     // Animation variants
@@ -31,9 +32,7 @@ const Hero = () => {
                 className="absolute inset-0 z-0 select-none"
             >
                 <img
-                    srcSet="/sm/hero-back.webp 400w, /md/hero-back.webp 800w, /lg/hero-back.webp 1200w"
-                    sizes="100vw"
-                    src="/lg/hero-back.webp"
+                    src={hero}
                     alt="Hope Construction - Building Contractor in Tamil Nadu"
                     fetchpriority="high"
                     loading="eager"
@@ -42,7 +41,7 @@ const Hero = () => {
                 />
 
                 {/* Advanced Gradient Overlay for a sleek look */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#050505]/95 via-[#050505]/70 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#050505]/40 via-[#050505]/70 to-transparent"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]/30"></div>
             </motion.div>
 

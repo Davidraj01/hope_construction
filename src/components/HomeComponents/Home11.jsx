@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import lasthero from '../../assets/lasthero.png';
 
 const Home11 = () => {
     const containerVariants = {
@@ -35,9 +36,7 @@ const Home11 = () => {
                         whileInView={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 1.2, ease: "easeOut" }}
                         viewport={{ once: true }}
-                        srcSet="/sec11.png 400w, /sec11.png 800w, /sec11.png 1200w"
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
-                        src="/sec11.png"
+                        src={lasthero}
                         alt="Construction Team"
                         loading="lazy"
                         decoding="async"

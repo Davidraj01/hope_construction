@@ -1,5 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import test1 from '../../assets/test1.png';
+import test2 from '../../assets/test2.png';
+import test3 from '../../assets/test3.png';
+import test4 from '../../assets/test4.png';
 
 const Home9 = () => {
     const containerVariants = {
@@ -27,28 +31,28 @@ const Home9 = () => {
             text: "We greatly appreciate the team's commitment to safety, quality, and client satisfaction, making our commercial construction project a complete success.",
             name: "ANITHA RAMESH",
             role: "Property Manager",
-            avatar: "https://randomuser.me/api/portraits/women/44.jpg"
+            avatar: test1
         },
         {
             rating: 5,
             text: "From planning to completion, their dedication, skill, and innovative approach made our building project smooth, efficient, and stress-free entirely.",
             name: "MUTHUKUMAR S.",
             role: "Interior Designer",
-            avatar: "https://randomuser.me/api/portraits/men/32.jpg"
+            avatar: test4
         },
         {
             rating: 5,
             text: "Their expertise, integrity, and attention to detail resulted in a high-quality building, delivered on time and exceeding all expectations remarkably.",
             name: "KARTHIKEYAN V.",
             role: "Real Estate Developer",
-            avatar: "https://randomuser.me/api/portraits/men/46.jpg"
+            avatar: test3
         },
         {
             rating: 5,
             text: "The team exceeded our expectations, providing high-quality materials, excellent workmanship, and reliable communication throughout every stage of our construction process.",
             name: "PRIYADHARSHINI K.",
             role: "Operations Director",
-            avatar: "/avatar_emma.webp"
+            avatar: test2
         }
     ];
 
