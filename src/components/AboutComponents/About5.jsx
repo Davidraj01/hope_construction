@@ -103,13 +103,13 @@ const About5 = () => {
                         {/* Banner Background Image */}
                         <div className="relative w-full h-[280px] sm:h-[320px] md:h-[360px] lg:h-[400px]">
                             <img
-                                srcSet="/about10.png 400w, /about10.png 800w, /about10.png 1200w"
-                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
-                                src="/about10.png"
+                                srcSet="/projecthero.png 400w, /projecthero.png 800w, /projecthero.png 1200w"
+                                sizes="(max-width: 740px) 100vw, (max-width: 1024px) 100vw, 100vw"
+                                src="/projecthero.png"
                                 alt="Construction workers with blueprints"
                                 loading="lazy"
                                 decoding="async"
-                                className="w-full h-full object-cover object-top"
+                                className="w-full h-full object-cover"
                             />
                             {/* Dark gradient overlay from right */}
                             <div className="absolute inset-0 bg-gradient-to-l from-black/80 via-black/40 to-transparent"></div>
@@ -220,13 +220,13 @@ const About5 = () => {
                             className="max-w-[380px] lg:max-w-[420px]"
                         >
                             <img
-                                srcSet="/about4.png 400w, /about4.png 800w, /about4.png 1200w"
+                                srcSet="/about11.png 400w, /about11.png 800w, /about11.png 1200w"
                                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
-                                src="/about4.png"
+                                src="/about11.png"
                                 alt="Construction crane vehicle"
                                 loading="lazy"
                                 decoding="async"
-                                className="w-full h-auto object-contain opacity-90 mix-blend-lighten grayscale brightness-150 contrast-125"
+                                className="w-full h-auto object-contain saturate-150 contrast-110 brightness-105 hover:saturate-200 transition duration-300"
                             />
                         </motion.div>
                     </div>

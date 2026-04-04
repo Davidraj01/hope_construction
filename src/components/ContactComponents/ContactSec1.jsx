@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 const ContactSec1 = () => {
     return (
         <section
-            className="relative flex items-center justify-center bg-cover bg-center h-[500px] md:h-[600px] bg-[url('/about.png')]"
+            className="relative flex items-center justify-center bg-cover bg-center h-[500px] md:h-[600px] bg-[url('/about13.png')]"
         >
             {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/60"></div>
+            <div className="absolute inset-0 bg-black/40"></div>
 
             {/* Content */}
             <div className="relative z-10 flex flex-col items-center justify-center text-center text-white px-4">

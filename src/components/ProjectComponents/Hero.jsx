@@ -12,14 +12,13 @@ const Hero = () => {
                 transition={{ duration: 1.5, ease: "easeOut" }}
                 className="absolute inset-0 z-0"
             >
-                <img
-                    src="/interior/interior21.jpeg"
-                    alt="Interior Design - Hope Construction Projects"
-                    fetchpriority="high"
-                    loading="eager"
-                    decoding="async"
-                    className="w-full h-full object-cover"
-                />
+                <div className="w-full h-full overflow-hidden">
+  <img
+    src="/projecthero.png"
+    alt="Projects"
+    className="w-full h-full object-cover"
+  />
+</div>
             </motion.div>
 
             {/* Dark Overlay */}

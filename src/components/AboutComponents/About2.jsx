@@ -126,9 +126,11 @@ const About2 = () => {
                             className="overflow-hidden"
                         >
                             <img
-                                srcSet="/sec2img2.png 400w, /sec2img2.png 800w, /sec2img2.png 1200w"
+                                srcSet="/about12.png 400w, /about12.png 800w, /about12.png 1200w"
                                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
-                                src="/sec2img2.png"
+                                 width={800}
+                                height={600}
+                                src="/about12.png"
                                 alt="Construction worker"
                                 loading="lazy"
                                 decoding="async"

@@ -21,6 +21,12 @@ const ongoingProjects = [
     {src: project1, alt: 'Ongoing Project 13' },
     {src: project2, alt: 'Ongoing Project 14' },
     {src: project3, alt: 'Ongoing Project 15' },
+     { src: '/project31.jpeg', alt: 'Project 8' },
+    { src: '/project32.jpeg', alt: 'Project 17' },
+    { src: '/project33.jpeg', alt: 'Project 18' },
+    { src: '/project34.jpeg', alt: 'Project 19' },
+    { src: '/project35.jpeg', alt: 'Project 20' },
+    { src: '/project36.jpeg', alt: 'Project 20' },
 ]
 
 const completedProjects = [
@@ -41,6 +47,10 @@ const completedProjects = [
     {src:project1, alt: 'Completed Project 11' },
     {src:project2, alt: 'Completed Project 12' },
     {src:project3, alt: 'Completed Project 13' },
+     {src: '/project27.png', alt: 'Completed Project 14' },
+    { src: '/project28.png', alt: 'Completed Project 15' },
+    { src: '/project29.png', alt: 'Completed Project 16' },
+    { src: '/project30.png', alt: 'Completed Project 17' },
 
 
 ]

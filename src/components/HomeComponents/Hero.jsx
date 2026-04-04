@@ -60,7 +60,7 @@ const Hero = () => {
                             <span className="relative inline-flex rounded-full h-1.5 w-1.5 sm:h-2 sm:w-2 bg-[#FFB800]"></span>
                         </span>
                         <p className="text-gray-200 font-medium tracking-wide text-[10px] sm:text-xs md:text-sm uppercase">
-                            Next-Gen Construction Solutions
+                            HOPE IS OUR SCOPE
                         </p>
                     </motion.div>
 

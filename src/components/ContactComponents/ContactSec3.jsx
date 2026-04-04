@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 const cards = [
     {
         title: 'Team Support',
-        image: '/about6.png',
+        image: '/about15.jpeg',
         description:
             'Our dedicated team provides responsive assistance to ensure every client receives dependable guidance throughout projects.',
     },
@@ -36,7 +36,7 @@ const ContactSec3 = () => {
         <section className="relative">
             {/* ===== HERO BACKGROUND ===== */}
             <div
-                className="relative w-full min-h-[420px] md:min-h-[520px] lg:min-h-[560px] flex items-center bg-cover bg-center bg-fixed bg-[url('/about.png')]"
+                className="relative w-full min-h-[420px] md:min-h-[520px] lg:min-h-[560px] flex items-center bg-cover bg-center bg-fixed bg-[url('/about5.png')]"
             >
                 {/* Dark gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
