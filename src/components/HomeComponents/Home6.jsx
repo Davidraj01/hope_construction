@@ -86,9 +86,9 @@ const Home6 = () => {
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
             viewport={{ once: true }}
-            srcSet="/sec6.jpg 400w, /sec6.jpg 800w, /sec6.jpg 1200w"
+            srcSet="/sec66.jpg 400w, /sec66.jpg 800w, /sec66.jpg 1200w"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
-            src="/sec6.jpg"
+            src="/sec66.jpg"
             alt="Modern tall architecture building"
             loading="lazy"
             decoding="async"
