@@ -27,6 +27,10 @@ const ongoingProjects = [
     { src: '/project34.jpeg', alt: 'Project 19' },
     { src: '/project35.jpeg', alt: 'Project 20' },
     { src: '/project36.jpeg', alt: 'Project 20' },
+     { src: '/project37.jpeg', alt: 'Project 18' },
+    { src: '/project38.jpeg', alt: 'Project 19' },
+    { src: '/project39.jpeg', alt: 'Project 20' },
+    { src: '/project40.jpeg', alt: 'Project 20' },
 ]
 
 const completedProjects = [
@@ -67,6 +71,12 @@ const forSaleProjects = [
     { src: '/forsale9.jpeg', alt: 'Property For Sale 9' },
     { src: '/forsale10.jpeg', alt: 'Property For Sale 10' },
     { src: '/forsale11.jpeg', alt: 'Property For Sale 11' },
+      { src: '/interior/interior29.jpeg', alt: 'Property For Sale 12' },
+    { src: '/interior/interior30.jpeg', alt: 'Property For Sale 13' },
+    { src: '/interior/interior31.jpeg', alt: 'Property For Sale 14' },
+    { src: '/interior/interior32.jpeg', alt: 'Property For Sale 15' },
+      { src: '/interior/interior33.jpeg', alt: 'Property For Sale 16' },
+      { src: '/forsale12.jpeg', alt: 'Property For Sale 12' },
 ]
 
 const interiorProjects = [
@@ -98,6 +108,11 @@ const interiorProjects = [
     { src: '/interior/interior26.jpeg', alt: 'Interior Design 26' },
     { src: '/interior/interior27.jpeg', alt: 'Interior Design 27' },
     { src: '/interior/interior28.jpeg', alt: 'Interior Design 28' },
+     { src: '/interior/interior29.jpeg', alt: 'Interior Design 29' },
+    { src: '/interior/interior30.jpeg', alt: 'Interior Design 30' },
+    { src: '/interior/interior31.jpeg', alt: 'Interior Design 31' },
+    { src: '/interior/interior32.jpeg', alt: 'Interior Design 32' },
+     { src: '/interior/interior33.jpeg', alt: 'Interior Design 33' },
 ]
 
 const tabs = [
