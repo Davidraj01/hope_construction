@@ -6,7 +6,7 @@ import project2 from '../../assets/project2.png'
 import project3 from '../../assets/project3.png'
 
 
-const ongoingProjects = [
+const ongoing2025Photos = [
     { src: '/project6.jpeg', alt: 'Project 6' },
     { src: '/project7.jpeg', alt: 'Project 7' },
     { src: '/project8.jpeg', alt: 'Project 8' },
@@ -14,28 +14,52 @@ const ongoingProjects = [
     { src: '/project18.jpeg', alt: 'Project 18' },
     { src: '/project19.jpeg', alt: 'Project 19' },
     { src: '/project20.jpeg', alt: 'Project 20' },
-    { src: '/forsale4.jpeg', alt: 'Ongoing Project 8' },
-    { src: '/forsale5.jpeg', alt: 'Ongoing Project 9' },
-    { src: '/forsale6.jpeg', alt: 'Ongoing Project 10' },
-    { src: '/forsale7.jpeg', alt: 'Ongoing Project 11' },
-    {src: project1, alt: 'Ongoing Project 13' },
-    {src: project2, alt: 'Ongoing Project 14' },
-    {src: project3, alt: 'Ongoing Project 15' },
-     { src: '/project31.jpeg', alt: 'Project 8' },
-    { src: '/project32.jpeg', alt: 'Project 17' },
-    { src: '/project33.jpeg', alt: 'Project 18' },
-    { src: '/project34.jpeg', alt: 'Project 19' },
-    { src: '/project35.jpeg', alt: 'Project 20' },
-    { src: '/project36.jpeg', alt: 'Project 20' },
-     { src: '/project37.jpeg', alt: 'Project 18' },
-    { src: '/project38.jpeg', alt: 'Project 19' },
-    { src: '/project39.jpeg', alt: 'Project 20' },
-    { src: '/project40.jpeg', alt: 'Project 20' },
-     { src: '/project41.jpeg', alt: 'Project 20' },
-     { src: '/project42.jpeg', alt: 'Project 18' },
-    { src: '/project43.jpeg', alt: 'Project 19' },
-    { src: '/project44.jpeg', alt: 'Project 20' },
-    { src: '/project45.jpeg', alt: 'Project 20' },
+    { src: '/forsale4.jpeg', alt: 'Completed Project 8' },
+    { src: '/forsale5.jpeg', alt: 'Completed Project 9' },
+    { src: '/forsale6.jpeg', alt: 'Completed Project 10' },
+    { src: '/forsale7.jpeg', alt: 'Completed Project 11' },
+    {src: project1, alt: 'Completed Project 13' },
+    {src: project2, alt: 'Completed Project 14' },
+    {src: project3, alt: 'Completed Project 15' },
+]
+
+const ongoingProjects = [
+    { src: '/ongoing/ongoing1.jpeg', alt: 'Ongoing Project 1' },
+    { src: '/ongoing/ongoing2.jpeg', alt: 'Ongoing Project 2' },
+    { src: '/ongoing/ongoing3.jpeg', alt: 'Ongoing Project 3' },
+    { src: '/ongoing/ongoing4.jpeg', alt: 'Ongoing Project 4' },
+    { src: '/ongoing/ongoing5.jpeg', alt: 'Ongoing Project 5' },
+    { src: '/ongoing/ongoing6.jpeg', alt: 'Ongoing Project 6' },
+    { src: '/ongoing/ongoing7.jpeg', alt: 'Ongoing Project 7' },
+    { src: '/ongoing/ongoing8.jpeg', alt: 'Ongoing Project 8' },
+    { src: '/ongoing/ongoing9.jpeg', alt: 'Ongoing Project 9' },
+    { src: '/ongoing/ongoing10.jpeg', alt: 'Ongoing Project 10' },
+    { src: '/ongoing/ongoing11.jpeg', alt: 'Ongoing Project 11' },
+    { src: '/ongoing/ongoing12.jpeg', alt: 'Ongoing Project 12' },
+    { src: '/ongoing/ongoing13.jpeg', alt: 'Ongoing Project 13' },
+    { src: '/ongoing/ongoing14.jpeg', alt: 'Ongoing Project 14' },
+    { src: '/ongoing/ongoing15.jpeg', alt: 'Ongoing Project 15' },
+    { src: '/ongoing/ongoing16.jpeg', alt: 'Ongoing Project 16' },
+    { src: '/ongoing/ongoing17.jpeg', alt: 'Ongoing Project 17' },
+]
+const forSaleProjects = [
+    { src: '/ongoing/ongoing1.jpeg', alt: 'Property For Sale 1' },
+    { src: '/ongoing/ongoing2.jpeg', alt: 'Property For Sale 2' },
+    { src: '/ongoing/ongoing3.jpeg', alt: 'Property For Sale 3' },
+    { src: '/ongoing/ongoing4.jpeg', alt: 'Property For Sale 4' },
+    { src: '/ongoing/ongoing5.jpeg', alt: 'Property For Sale 5' },
+    { src: '/ongoing/ongoing6.jpeg', alt: 'Property For Sale 6' },
+    { src: '/ongoing/ongoing7.jpeg', alt: 'Property For Sale 7' },
+    { src: '/ongoing/ongoing8.jpeg', alt: 'Property For Sale 8' },
+    { src: '/ongoing/ongoing9.jpeg', alt: 'Property For Sale 9' },
+    { src: '/ongoing/ongoing10.jpeg', alt: 'Property For Sale 10' },
+    { src: '/ongoing/ongoing11.jpeg', alt: 'Property For Sale 11' },
+    { src: '/ongoing/ongoing12.jpeg', alt: 'Property For Sale 12' },
+    { src: '/ongoing/ongoing13.jpeg', alt: 'Property For Sale 13' },
+    { src: '/ongoing/ongoing14.jpeg', alt: 'Property For Sale 14' },
+    { src: '/ongoing/ongoing15.jpeg', alt: 'Property For Sale 15' },
+    { src: '/ongoing/ongoing16.jpeg', alt: 'Property For Sale 16' },
+    { src: '/ongoing/ongoing17.jpeg', alt: 'Property For Sale 17' },
 ]
 
 const completedProjects = [
@@ -56,39 +80,32 @@ const completedProjects = [
     {src:project1, alt: 'Completed Project 11' },
     {src:project2, alt: 'Completed Project 12' },
     {src:project3, alt: 'Completed Project 13' },
-     {src: '/project27.png', alt: 'Completed Project 14' },
-    { src: '/project28.png', alt: 'Completed Project 15' },
-    { src: '/project29.png', alt: 'Completed Project 16' },
-    { src: '/project30.png', alt: 'Completed Project 17' },
-        {src: '/project31.png', alt: 'Completed Project 14' },
-    { src: '/project32.png', alt: 'Completed Project 15' },
-    { src: '/project33.png', alt: 'Completed Project 16' },
-    { src: '/project34.png', alt: 'Completed Project 17' },
-           {src: '/project35.png', alt: 'Completed Project 14' },
-   
-      
 
 
 ]
 
-const forSaleProjects = [
-    { src: '/forsale1.jpeg', alt: 'Property For Sale 1' },
-    { src: '/forsale2.jpeg', alt: 'Property For Sale 2' },
-    { src: '/forsale3.jpeg', alt: 'Property For Sale 3' },
-    { src: '/forsale4.jpeg', alt: 'Property For Sale 4' },
-    { src: '/forsale5.jpeg', alt: 'Property For Sale 5' },
-    { src: '/forsale6.jpeg', alt: 'Property For Sale 6' },
-    { src: '/forsale7.jpeg', alt: 'Property For Sale 7' },
-    { src: '/forsale8.jpeg', alt: 'Property For Sale 8' },
-    { src: '/forsale9.jpeg', alt: 'Property For Sale 9' },
-    { src: '/forsale10.jpeg', alt: 'Property For Sale 10' },
-    { src: '/forsale11.jpeg', alt: 'Property For Sale 11' },
-      { src: '/interior/interior29.jpeg', alt: 'Property For Sale 12' },
-    { src: '/interior/interior30.jpeg', alt: 'Property For Sale 13' },
-    { src: '/interior/interior31.jpeg', alt: 'Property For Sale 14' },
-    { src: '/interior/interior32.jpeg', alt: 'Property For Sale 15' },
-      { src: '/interior/interior33.jpeg', alt: 'Property For Sale 16' },
-      { src: '/forsale12.jpeg', alt: 'Property For Sale 12' },
+const forSale2025Photos = [
+    { src: '/forsale1.jpeg', alt: 'Completed Project 1' },
+    { src: '/forsale2.jpeg', alt: 'Completed Project 2' },
+    { src: '/forsale3.jpeg', alt: 'Completed Project 3' },
+    { src: '/forsale4.jpeg', alt: 'Completed Project 4' },
+    { src: '/forsale5.jpeg', alt: 'Completed Project 5' },
+    { src: '/forsale6.jpeg', alt: 'Completed Project 6' },
+    { src: '/forsale7.jpeg', alt: 'Completed Project 7' },
+    { src: '/forsale8.jpeg', alt: 'Completed Project 8' },
+    { src: '/forsale9.jpeg', alt: 'Completed Project 9' },
+    { src: '/forsale10.jpeg', alt: 'Completed Project 10' },
+    { src: '/forsale11.jpeg', alt: 'Completed Project 11' },
+]
+
+const projectFolders = [
+    {
+        title: '2025 Projects',
+        thumbnail: '/forsale1.jpeg',
+        images: [...completedProjects, ...ongoing2025Photos, ...forSale2025Photos].filter(
+            (photo, i, all) => all.findIndex((p) => p.src === photo.src) === i
+        ),
+    },
 ]
 
 const interiorProjects = [
@@ -120,15 +137,6 @@ const interiorProjects = [
     { src: '/interior/interior26.jpeg', alt: 'Interior Design 26' },
     { src: '/interior/interior27.jpeg', alt: 'Interior Design 27' },
     { src: '/interior/interior28.jpeg', alt: 'Interior Design 28' },
-     { src: '/interior/interior29.jpeg', alt: 'Interior Design 29' },
-    { src: '/interior/interior30.jpeg', alt: 'Interior Design 30' },
-    { src: '/interior/interior31.jpeg', alt: 'Interior Design 31' },
-    { src: '/interior/interior32.jpeg', alt: 'Interior Design 32' },
-     { src: '/interior/interior33.jpeg', alt: 'Interior Design 33' },
-        { src: '/interior/interior34.jpeg', alt: 'Interior Design 30' },
-    { src: '/interior/interior35.jpeg', alt: 'Interior Design 31' },
-    { src: '/interior/interior36.jpeg', alt: 'Interior Design 32' },
-     { src: '/interior/interior37.jpeg', alt: 'Interior Design 33' },
 ]
 
 const tabs = [
@@ -156,7 +164,7 @@ const tabs = [
 
 const dataMap = {
     ongoing: ongoingProjects,
-    completed: completedProjects,
+    completed: [], // completed photos live inside the 2025 Projects folder
     sales: forSaleProjects,
     interior: interiorProjects,
 }
@@ -167,6 +175,7 @@ const ProjectMediaGallery = () => {
     const [activeTab, setActiveTab] = useState(
         tabFromUrl && dataMap[tabFromUrl] ? tabFromUrl : 'ongoing'
     )
+    const [openFolder, setOpenFolder] = useState(null)
     const [lightbox, setLightbox] = useState({ open: false, src: '', index: 0 })
 
     useEffect(() => {
@@ -176,11 +185,12 @@ const ProjectMediaGallery = () => {
     }, [tabFromUrl])
 
     const handleTabChange = (key) => {
+        setOpenFolder(null)
         setActiveTab(key)
         setSearchParams({ tab: key })
     }
 
-    const currentImages = dataMap[activeTab] || []
+    const currentImages = openFolder ? openFolder.images : (dataMap[activeTab] || [])
 
     const openLightbox = (src, index) => setLightbox({ open: true, src, index })
     const closeLightbox = () => setLightbox({ open: false, src: '', index: 0 })
@@ -238,16 +248,53 @@ const ProjectMediaGallery = () => {
                     ))}
                 </div>
 
+                {openFolder && (
+                    <div className="flex items-center gap-4 mb-8">
+                        <button
+                            onClick={() => setOpenFolder(null)}
+                            className="flex items-center gap-2 px-5 py-2.5 bg-[#f1f1f1] hover:bg-[#F5B400] text-[#111] text-sm font-bold uppercase tracking-[0.1em] transition-colors"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                            </svg>
+                            Back
+                        </button>
+                        <h3 className="font-heading font-black text-[#111] text-xl sm:text-2xl uppercase tracking-tight">{openFolder.title}</h3>
+                    </div>
+                )}
+
                 {/* Content Grid */}
                 <AnimatePresence mode="wait">
                     <motion.div
-                        key={activeTab}
+                        key={`${activeTab}-${openFolder ? openFolder.title : 'root'}`}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.4 }}
                         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
                     >
+                        {activeTab === 'completed' && !openFolder && projectFolders.map((folder) => (
+                            <motion.div
+                                key={folder.title}
+                                initial={{ opacity: 0, scale: 0.95 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.4 }}
+                                className="group relative aspect-[4/3] overflow-hidden cursor-pointer bg-gray-100"
+                                onClick={() => setOpenFolder(folder)}
+                            >
+                                <img
+                                    src={folder.thumbnail}
+                                    alt={folder.title}
+                                    loading="lazy"
+                                    decoding="async"
+                                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
+                                <div className="absolute bottom-0 left-0 right-0 p-5">
+                                    <p className="text-white font-heading font-black text-xl uppercase tracking-tight">{folder.title}</p>
+                                </div>
+                            </motion.div>
+                        ))}
                         {currentImages.map((photo, i) => (
                             <motion.div
                                 key={`${activeTab}-${i}`}
@@ -284,7 +331,7 @@ const ProjectMediaGallery = () => {
                 </AnimatePresence>
 
                 {/* Empty State */}
-                {currentImages.length === 0 && (
+                {currentImages.length === 0 && !(activeTab === 'completed' && !openFolder) && (
                     <div className="text-center py-20">
                         <p className="text-gray-400 text-lg">No projects found in this category.</p>
                     </div>
